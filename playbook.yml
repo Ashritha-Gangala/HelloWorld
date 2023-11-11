@@ -1,5 +1,5 @@
 - name: Deploy and Configure Application
-  hosts: admin
+  hosts: localhost
   become: yes
 
   tasks:
