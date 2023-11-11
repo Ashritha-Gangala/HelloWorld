@@ -1,0 +1,9 @@
+- name: Deploy and Configure Application
+  hosts: admin
+  become: yes
+
+  tasks:
+    - name: Ensure Docker is installed
+      apt:
+        name: docker.io
+        state: present
