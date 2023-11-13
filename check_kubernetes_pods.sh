@@ -1,4 +1,4 @@
-if kubectl get pods | grep -q "Running"; then
+if kubectl get pod hello-app-deployment-6b6dbffdd6-74fpl | grep "Running"; then
     echo "OK - Pods are running"
     exit 0
 else
